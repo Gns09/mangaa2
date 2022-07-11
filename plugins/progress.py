@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 from translation import Translation
 from config import Config
-from helper_funcs.help import check_url
+from helper_funcs.help
 
 
 @Client.on_message(filters.private & filters.text)
