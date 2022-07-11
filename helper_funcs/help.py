@@ -8,7 +8,7 @@ from typing import Tuple
 
 
         
-    if ' ' in url:
+ 
         url = url.split(' ')[0]
     ext = tldextract.extract(url)
     pre = f'{ext.subdomain}.{ext.domain}.{ext.suffix}'
