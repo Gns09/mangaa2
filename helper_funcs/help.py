@@ -9,7 +9,7 @@ from typing import Tuple
 
         
  
-        url = url.split(' ')[0]
+        
     ext = tldextract.extract(url)
     pre = f'{ext.subdomain}.{ext.domain}.{ext.suffix}'
     if not ext.subdomain:
