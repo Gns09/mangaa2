@@ -388,17 +388,6 @@ http://zeroscans.com
 http://zinmanga.com
 '''
 
-
-    ext = tldextract.extract(url)
-    pre = f'{ext.subdomain}.{ext.domain}.{ext.suffix}'
-    if not ext.subdomain:
-        pre = f'{ext.domain}.{ext.suffix}'
-    if pre in supported:
-        return True
-    else:
-        return False
-
-
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
     args = shlex.split(cmd)
     process = await asyncio.create_subprocess_exec(
